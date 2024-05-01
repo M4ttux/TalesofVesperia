@@ -142,8 +142,6 @@ main {
     margin: 0px auto;
     padding: 20px;
     box-shadow: -1px 5px 19px 6px rgba(0,0,0,0.51);
-    -webkit-box-shadow: -1px 5px 19px 6px rgba(0,0,0,0.51);
-    -moz-box-shadow: -1px 5px 19px 6px rgba(0,0,0,0.51);
 }
 
 section {
@@ -255,7 +253,6 @@ section {
     background-color: #55423d;
     border-radius: 15px;
     border: 5px outset rgba(231, 197, 103, 1);
-    
 }
 
 .gallery-container div{
@@ -287,15 +284,14 @@ form label {
     text-align: center;
 }
 
-input[type="text" i], input[type="email" i], textarea {
+input[type="text" i], input[type="tel" i], input[type="email" i], textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ffffff;
     border-radius: 5px;
-    box-sizing: border-box;
-        -webkit-box-sizing: border-box;      
+    box-sizing: border-box;     
     resize: none;
 }
 
@@ -309,9 +305,7 @@ input[type=submit], input[type=reset] {
     padding: 20px 20px;
     cursor: pointer;
     margin: auto 10px;
-    transition: background-color 0.3s, transform 0.3s;
-        transition: background-color 0.3s, -webkit-transform 0.3s;
-            transition: background-color 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    transition: background-color 0.3s;
     border-radius: 5px;
 }
 
@@ -371,11 +365,10 @@ footer ul li{
 
 /* Hovers */
 @media (hover:hover) {
+    
     input[type=submit]:hover, input[type=reset]:hover, .boton button:hover {
         background-color: #976995;
-        transform: scale(1.02);
-            -webkit-transform: scale(1.02);
-                -ms-transform: scale(1.02);       
+        transform: scale(1.02);      
     }
 
     img:hover {
@@ -551,7 +544,6 @@ footer ul li{
 
     #personajes .pj-container > div {
         display: grid;
-
     }
     
     #personajes .pj-container > div:first-child {
