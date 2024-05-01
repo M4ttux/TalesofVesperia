@@ -24,17 +24,20 @@
     <main>
         <section class="banner">
             <div class="banner-principal">
-                <picture>
-                    <!-- Mobile -->
-                    <source srcset="imgs/mobile/banner_celular.jpg" media="(max-width:480px)">
-                    <!-- Tablet -->
-                    <source srcset="imgs/tablet/banner_tablet.jpg" media="(max-width:768px)">
-                    <!-- Desktop -->
-                    <img src="imgs/desktop/banner.jpg" alt="Banner principal del videojuego">
+                <figure>
+                    <picture>
+                        <!-- Mobile -->
+                        <source srcset="imgs/mobile/banner_celular.jpg" media="(max-width:480px)">
+                        <!-- Tablet -->
+                        <source srcset="imgs/tablet/banner_tablet.jpg" media="(max-width:768px)">
+                        <!-- Desktop -->
+                        <img src="imgs/desktop/banner.jpg" alt="Banner principal del videojuego">
+                    </picture>
                     <figcaption>
                         <h1>Tales of Vesperia</h1>
                     </figcaption>
-                </picture>
+                </figure>
+                
             </div>
         </section>
         <section id="introduccion">
@@ -359,8 +362,8 @@
                                 <input type="text" id="nombre" name="Nombre" size="20" placeholder="Escriba su nombre...">
                             </div>
                             <div>
-                                <label for="apellido">Apellido</label>
-                                <input type="text" id="apellido" name="Apellido" size="20" placeholder="Escriba su apellido...">
+                                <label for="telefono">Número de teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Escriba su telefono: ">
                             </div>
                             <div>
                                 <label for="email">Correo Electronico</label>
